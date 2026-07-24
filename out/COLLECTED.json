@@ -1,5 +1,5 @@
 {
- "collected": "2026-07-24T03:08:07+00:00",
+ "collected": "2026-07-24T03:10:47+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "longrun_series": {
@@ -42,18 +42,6 @@
     }
    }
   },
-  "sanctions": {
-   "builder": "build_sanctions:main",
-   "license": "公有领域（美国联邦政府作品，17 U.S.C. §105）",
-   "attribution": "U.S. Treasury OFAC — Sanctions List Service",
-   "title": "制裁行动 2025– · OFAC",
-   "outputs": {
-    "sanction_events.json": {
-     "bytes": 30599,
-     "sha256": "d356dec5b26015750663c3e9aac1b6b8fa37cbd02264ffd7ec7754ef0151c755"
-    }
-   }
-  },
   "quakes": {
    "builder": "build_dynamic:quakes",
    "license": "公有领域",
@@ -61,8 +49,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 73027,
-     "sha256": "de5f021ca4f17431f09cf2cbb6537ee7ec5943e3530dba71b56c6a7c6ee8859a"
+     "bytes": 72992,
+     "sha256": "a24c27c46bfed427cb6a30e2ef9c8e5501372cbb1025611180009a4e84f5706e"
     }
    }
   },
@@ -85,8 +73,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 132772,
-     "sha256": "44947ffdefee5a846fcbb02c443117ea35bb041768f6a01549ed93a97d627784"
+     "bytes": 130620,
+     "sha256": "dc7500eca8f5cc9d181287229a46131bba6c04263a43a6a5af0253bd4b6aee0c"
     }
    }
   },
@@ -113,8 +101,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2342,
-     "sha256": "3ee412a5a1f880478e95b6e5a88ad75a44246df383ee9762fadc3733235a28d1"
+     "bytes": 2344,
+     "sha256": "0710eb1da292d387780a0c27ae7259a16e436baa5547f0d3b2b6e363be122ee2"
     }
    }
   },
