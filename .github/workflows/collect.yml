@@ -1,0 +1,89 @@
+# 开放许可源采集器（公开仓 · Actions 免费不限量）
+#
+# 模式对齐 visit-g2：公开仓每日 fetch+build 开放许可数据 → commit 产物到 out/；
+# 私仓 daily-data 浅克隆本仓 out/ 取数（见 PRIVATE_WIRING.md）。
+#
+# 凭据（Secrets）：
+#   本采集器只跑 ALLOWLIST 里判定 public 的数据集，**全部免登录**——
+#   OWID（longrun_series/temp）、World Bank（wb_series）、USGS（quakes）、
+#   NASA FIRMS（fires）、NOAA SWPC/IBTrACS（aurora/storms/spaceweather）、
+#   OFAC（sanctions）、自生成合成（lightning/gpsjam_synth）。
+#   → **不需要任何 Actions Secret**。若日后把某个需 key 的开放源纳入，再在此
+#     env: 块补 `${{ secrets.XXX }}` 并在 fetch_open.py 的 PUBLIC_IDS 加项。
+#   受限/需凭据的源（radar=CLOUDFLARE_RADAR_TOKEN、carbon=ELECTRICITYMAPS_TOKEN、
+#   space=SPACETRACK_*、traffic=OPENSKY_*、conflict=UCDP_TOKEN）**留在私仓**，
+#   绝不透传到本公开仓。
+name: collect-open
+
+on:
+  schedule:
+    - cron: '15 23 * * *'   # UTC 23:15（早于私仓 daily-data 的 00:30，产物先就位供浅克隆）
+  workflow_dispatch: {}
+
+permissions:
+  contents: write            # commit 产物到 out/
+
+concurrency:
+  group: collect-open
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # requests：所有 fetch；shapely：sanctions 的 geo_iso 建 STRtree 做国界反查。
+      # matplotlib/websockets 不需要（traffic/aisstream 属受限源，不在本采集器）。
+      - name: 依赖
+        run: pip install --quiet requests shapely
+
+      # 下载缓存跨运行复用：sanctions 逐 publication delta（immutable）与 OWID/世行
+      # 大 CSV 不必每日重下。冷缓存首跑较慢（sanctions 数百 publication 顺序拉取），
+      # 之后命中缓存即快。
+      - name: 恢复采集缓存
+        uses: actions/cache@v4
+        with:
+          path: collector/.cache
+          key: collect-cache-v1-${{ github.run_id }}
+          restore-keys: |
+            collect-cache-v1-
+
+      # pipeline 代码来源（自包含范式）：本仓根目录的 pipeline/ 是编排在建公开仓时
+      # 从主仓**只拷开放源用到的** builder + common.py + registry.py（受限源 builder
+      # 一律不拷）。fetch_open.py 默认吃 ./pipeline；若本仓未内置 pipeline/ 则回退
+      # ../pipeline（仅本地主仓内审计用）。此处显式指向仓内 pipeline/。
+      - name: 采集开放源（fetch + build → collector/out/）
+        working-directory: collector
+        env:
+          GP_PIPELINE_DIR: ${{ github.workspace }}/pipeline
+        # 失败不阻塞：fetch_open.py 内部对单数据集失败已优雅跳过并保留旧产物；
+        # 整体非零才 warning（当前实现恒返回 0，逐条 warning 在日志）。
+        run: |
+          python3 fetch_open.py || echo "::warning::部分开放源采集失败（保留 out/ 上一版）"
+
+      - name: 零受限数据 + 零凭据审计（发布前闸门）
+        working-directory: collector
+        run: |
+          bash audit.sh || { echo "::error::审计未通过——拒绝 commit（疑似受限数据或凭据明文）"; exit 1; }
+
+      - name: commit 产物到公开仓
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add collector/out
+          if git diff --cached --quiet; then
+            echo "产物无变化，跳过 commit"
+          else
+            git commit -m "chore: 开放源每日采集（$(date -u +%F)）"
+            for i in 1 2 3; do
+              git pull --rebase -X theirs && git push && break
+              echo "推送竞争，重试 $i/3"; sleep 5
+              [ "$i" = 3 ] && exit 1
+            done
+          fi

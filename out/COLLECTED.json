@@ -1,0 +1,146 @@
+{
+ "collected": "2026-07-24T03:08:07+00:00",
+ "source": "global-pulse open-license collector (visit-g2 pattern)",
+ "datasets": {
+  "longrun_series": {
+   "builder": "build_longrun_series:main",
+   "license": "CC BY（V-Dem 底层 CC BY-SA）",
+   "attribution": "OWID（Maddison/V-Dem/WID/Gapminder/HFD/EI 等底层源）",
+   "title": "20 项长时序指标 · OWID（公元1–）",
+   "outputs": {
+    "finale/longrun_series.json": {
+     "bytes": 4018130,
+     "sha256": "d7544334a0a9ad86c9e4fa8e1b273688e3652c3cf7dba9f8304cb6cbdc5af941"
+    },
+    "finale/attributions.json": {
+     "bytes": 10262,
+     "sha256": "53f70362e61cc521b54bfb051b68cb427501b45f30d60776aed3ddad5db2c3c1"
+    }
+   }
+  },
+  "wb_series": {
+   "builder": "build_worldbank:main",
+   "license": "CC BY 4.0",
+   "attribution": "World Development Indicators; Worldwide Governance Indicators 2025 Revision, World Bank (www.govindicators.org)",
+   "title": "28 项治理/经济/基建/气候指标 · 世行直连",
+   "outputs": {
+    "finale/wb_series.json": {
+     "bytes": 2714598,
+     "sha256": "baf742f99c34c2d0699a2f80a3e97d3384fb66dc1db156fa419ef6bffeea403f"
+    }
+   }
+  },
+  "temp": {
+   "builder": "build_temp:main",
+   "license": "CC BY",
+   "attribution": "HadCRUT via OWID",
+   "title": "全球温度异常 1850– · HadCRUT/OWID",
+   "outputs": {
+    "temp_stripes.json": {
+     "bytes": 2356,
+     "sha256": "85c8e53bf1614b9e67fc8e02e87591e7d498ddef7c61b46026aa9d3a455ca727"
+    }
+   }
+  },
+  "sanctions": {
+   "builder": "build_sanctions:main",
+   "license": "公有领域（美国联邦政府作品，17 U.S.C. §105）",
+   "attribution": "U.S. Treasury OFAC — Sanctions List Service",
+   "title": "制裁行动 2025– · OFAC",
+   "outputs": {
+    "sanction_events.json": {
+     "bytes": 30599,
+     "sha256": "d356dec5b26015750663c3e9aac1b6b8fa37cbd02264ffd7ec7754ef0151c755"
+    }
+   }
+  },
+  "quakes": {
+   "builder": "build_dynamic:quakes",
+   "license": "公有领域",
+   "attribution": "USGS",
+   "title": "地震 · USGS",
+   "outputs": {
+    "quakes.json": {
+     "bytes": 73027,
+     "sha256": "de5f021ca4f17431f09cf2cbb6537ee7ec5943e3530dba71b56c6a7c6ee8859a"
+    }
+   }
+  },
+  "fires": {
+   "builder": "build_dynamic:fires",
+   "license": "公开",
+   "attribution": "NASA FIRMS",
+   "title": "火点 24h · NASA FIRMS",
+   "outputs": {
+    "fires.json": {
+     "bytes": 185333,
+     "sha256": "404eb31501187a85a7207a5934ed607e14fd1d1e6a5a76723c2996356ff8fa39"
+    }
+   }
+  },
+  "aurora": {
+   "builder": "build_dynamic:aurora",
+   "license": "公有领域",
+   "attribution": "NOAA SWPC OVATION",
+   "title": "极光 · NOAA SWPC",
+   "outputs": {
+    "aurora.json": {
+     "bytes": 132772,
+     "sha256": "44947ffdefee5a846fcbb02c443117ea35bb041768f6a01549ed93a97d627784"
+    }
+   }
+  },
+  "storms": {
+   "builder": "build_dynamic:storms",
+   "license": "公开",
+   "attribution": "NOAA IBTrACS v04r01",
+   "title": "台风轨迹 · NOAA IBTrACS",
+   "outputs": {
+    "storms.json": {
+     "bytes": 5150,
+     "sha256": "cb26e0e816fc4001edda999c88537bffa0c146637cd56ab410225f6ba5853b10"
+    },
+    "storms_daily.json": {
+     "bytes": 169689,
+     "sha256": "9ee0798a575e4863a2b51f970613569660d921973e46f36d51bfc267aa34a7fb"
+    }
+   }
+  },
+  "spaceweather": {
+   "builder": "build_spaceweather:main",
+   "license": "公有领域",
+   "attribution": "NOAA SWPC",
+   "title": "空间天气 · NOAA SWPC",
+   "outputs": {
+    "spaceweather.json": {
+     "bytes": 2342,
+     "sha256": "3ee412a5a1f880478e95b6e5a88ad75a44246df383ee9762fadc3733235a28d1"
+    }
+   }
+  },
+  "lightning": {
+   "builder": "build_dynamic:lightning_synthetic",
+   "license": "—",
+   "attribution": "synthetic（Blitzortung 需社区握手）",
+   "title": "闪电(气候学热区) · 合成",
+   "outputs": {
+    "lightning_synth.json": {
+     "bytes": 123852,
+     "sha256": "f945ea8dc0fad793aad76a8d1b8718d26bd5d6f9c5d65a126b84c6ac7557a813"
+    }
+   }
+  },
+  "gpsjam_synth": {
+   "builder": "build_dynamic:gps_interference_synthetic",
+   "license": "—",
+   "attribution": "synthetic（实测版见 gpsjam 数据集）",
+   "title": "GPS 干扰(降级) · 合成",
+   "outputs": {
+    "gps_interference_synth.json": {
+     "bytes": 38138,
+     "sha256": "8b4e5abb6dd0d469bc3b889dd1386e8751cd25ca22b4355bd6b5044114316b45"
+    }
+   }
+  }
+ }
+}
