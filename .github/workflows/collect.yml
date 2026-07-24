@@ -49,7 +49,7 @@ jobs:
       - name: 恢复采集缓存
         uses: actions/cache@v4
         with:
-          path: collector/.cache
+          path: .cache
           key: collect-cache-v1-${{ github.run_id }}
           restore-keys: |
             collect-cache-v1-
@@ -58,8 +58,7 @@ jobs:
       # 从主仓**只拷开放源用到的** builder + common.py + registry.py（受限源 builder
       # 一律不拷）。fetch_open.py 默认吃 ./pipeline；若本仓未内置 pipeline/ 则回退
       # ../pipeline（仅本地主仓内审计用）。此处显式指向仓内 pipeline/。
-      - name: 采集开放源（fetch + build → collector/out/）
-        working-directory: collector
+      - name: 采集开放源（fetch + build → out/）
         env:
           GP_PIPELINE_DIR: ${{ github.workspace }}/pipeline
         # 失败不阻塞：fetch_open.py 内部对单数据集失败已优雅跳过并保留旧产物；
@@ -68,7 +67,6 @@ jobs:
           python3 fetch_open.py || echo "::warning::部分开放源采集失败（保留 out/ 上一版）"
 
       - name: 零受限数据 + 零凭据审计（发布前闸门）
-        working-directory: collector
         run: |
           bash audit.sh || { echo "::error::审计未通过——拒绝 commit（疑似受限数据或凭据明文）"; exit 1; }
 
@@ -76,7 +74,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add collector/out
+          git add out
           if git diff --cached --quiet; then
             echo "产物无变化，跳过 commit"
           else
