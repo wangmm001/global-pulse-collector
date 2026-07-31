@@ -1,5 +1,5 @@
 {
- "collected": "2026-07-30T00:07:56+00:00",
+ "collected": "2026-07-31T00:13:33+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "longrun_series": {
@@ -14,7 +14,7 @@
     },
     "finale/attributions.json": {
      "bytes": 10262,
-     "sha256": "ee39e444d67f52eb998ebab47ce4f606cac01fa104499493ccf7360cd6eec17f"
+     "sha256": "0cc59c6779b90fbe4dee772d5d39a586290520c518bc468ada8b3fb010faa991"
     }
    }
   },
@@ -50,7 +50,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 31054,
-     "sha256": "44c6e4ad7e4c562782beea121fc41ce874f4bb032f5c8bef9720157c9a62d67d"
+     "sha256": "45672bd134ecd6d2978970a4ffba54724ff9837c9698e9295c8600f7fa7d0b48"
     }
    }
   },
@@ -61,8 +61,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 79821,
-     "sha256": "398ea44df2b64c414f46266d525b3360d62242d758bce52bdce6ad495fadf190"
+     "bytes": 76161,
+     "sha256": "fe85b3f0a633b91d8da0ca312ac9cb757dc825ea6d9b009c186a4e406a8c9a51"
     }
    }
   },
@@ -73,8 +73,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 180164,
-     "sha256": "3fbf3319a63349a498f1245897a8a533c3c449340ab2e1a2bec4b2c52d1efed0"
+     "bytes": 180485,
+     "sha256": "598ebb13d57fd5f855d083b9a3146fa5cf678907ca4f59444f9681ee38e86fcd"
     }
    }
   },
@@ -85,8 +85,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 24236,
-     "sha256": "2364f4ba343f38805aaba98c57b925f75f7f51a7fafa14c1c00140544f21dc32"
+     "bytes": 41145,
+     "sha256": "9645f790fa7184eeee00b828f80155bb6af7c668759e425aef3a6e86c18f4885"
     }
    }
   },
@@ -101,8 +101,8 @@
      "sha256": "b0266a836b290fbb79e90b2c1504fdc74f29c2f03f9d40b405cdba954a35e230"
     },
     "storms_daily.json": {
-     "bytes": 171649,
-     "sha256": "fadd0e8534fe7e21891da535366807bdd8f6a20e4b579d45a068e73b43d655c4"
+     "bytes": 171469,
+     "sha256": "6985db0a65f97dada27950e492f2b9e0fce64f04f0ed51c941d8ca8b5d70acac"
     }
    }
   },
@@ -113,8 +113,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2154,
-     "sha256": "dbce58ce49b78f2de10f1ac2229534c10e82248c8dc7f0a714e15290b292222b"
+     "bytes": 2022,
+     "sha256": "f460855f898a98a70d481bc36c67e5f5bc7c36784e6e6c69bd0f003d5a111c15"
     }
    }
   },
