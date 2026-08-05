@@ -1,5 +1,5 @@
 {
- "collected": "2026-08-04T00:15:06+00:00",
+ "collected": "2026-08-05T00:13:30+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "longrun_series": {
@@ -14,7 +14,7 @@
     },
     "finale/attributions.json": {
      "bytes": 10254,
-     "sha256": "e946eb9854de7f3326bf82934944d0a8ca0bbcc19c089a950d2c0bff3375c64d"
+     "sha256": "32cb115c43a446339d503f3c5d1839c74b3f0c41e76e72eb97b7202cbee047a2"
     }
    }
   },
@@ -50,7 +50,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 31079,
-     "sha256": "311a126db793e8bc0b025b8d7cee0a874c50b744b15803d78fb2823b89162430"
+     "sha256": "7924beb8dff64ad4f022d94ac38217cbb90678e49ff562a789ddf511f26a2330"
     }
    }
   },
@@ -61,8 +61,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 67394,
-     "sha256": "c0534add448e151a5315e1c5d70d61e7291c132db6d67c0979bd7f71a6b1fc5a"
+     "bytes": 67865,
+     "sha256": "dfc73bf2286eccff97bbbd8042a4840b0d23487e6b4d8ca5929ce9f6ceec2a57"
     }
    }
   },
@@ -85,8 +85,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 141858,
-     "sha256": "d9f1dc752e11997827487b8b439b7b131514d548b766ce0849f6993ccfad8071"
+     "bytes": 16407,
+     "sha256": "13970a54a1f788f5348bfb9977bcd90c335176c3b6d30c46316d4b57b34467e2"
     }
    }
   },
@@ -101,8 +101,8 @@
      "sha256": "b0266a836b290fbb79e90b2c1504fdc74f29c2f03f9d40b405cdba954a35e230"
     },
     "storms_daily.json": {
-     "bytes": 170523,
-     "sha256": "bbae951cf6e2a9112080b713199436c9122586164e719bf2e78c1ac3a47f55a7"
+     "bytes": 170139,
+     "sha256": "f3b1c3c64a1b0faf731fe77d08b7c5ad14b4a17365b53239fefb16942b1a973e"
     }
    }
   },
@@ -113,8 +113,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 1982,
-     "sha256": "2626d793dc2f4a84099f4b9bb05eda724fb9e287468e51b5219ed7c95ddfa454"
+     "bytes": 1970,
+     "sha256": "4242b72c45bc85be53c1c6910372e1fbd81e99b5fab350118d03baadbbcc3344"
     }
    }
   },
