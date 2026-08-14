@@ -1,5 +1,5 @@
 {
- "collected": "2026-08-13T23:54:16+00:00",
+ "collected": "2026-08-14T23:33:18+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -34,7 +34,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 31347,
-     "sha256": "37c28a794e966c38017def7068b5a69f377dc65714cac64e34fdd3f56316267c"
+     "sha256": "d142a85c6c4d0e66424986f9d361994e133a3d7be5f9e233af16b26e26f9921c"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 83166,
-     "sha256": "f190e8e755abf4036a117e40238fae69c96196af628dc8514060f71354335792"
+     "bytes": 80002,
+     "sha256": "6f4d01041ba44b388d327b9b89b4bb879ba720e0bee1ce8d8d38927f956f7579"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 104881,
-     "sha256": "99310a0e04186a414c835de8feda033bd4bc8aad18f8f7b5e84a357748f4f2fb"
+     "bytes": 62460,
+     "sha256": "83d0b05e0f748e54f2f0bd189fb23dfa7e7d74cebc8b12a540e7ad13960bf199"
     }
    }
   },
@@ -85,8 +85,20 @@
      "sha256": "ddf421a44d573d2da952a7c97d451384e8f7d83682abe765185329968c9ca008"
     },
     "storms_daily.json": {
-     "bytes": 175572,
-     "sha256": "74a2709358c1d1a0473ad3c4b10b9371de9e1aa203b3797de4ad2086160b1270"
+     "bytes": 175380,
+     "sha256": "14889577ddfb1518a6abd5fa80f4bfafe735ad0d436bb975a0e7d18d49efff79"
+    }
+   }
+  },
+  "spaceweather": {
+   "builder": "build_spaceweather:main",
+   "license": "公有领域",
+   "attribution": "NOAA SWPC",
+   "title": "空间天气 · NOAA SWPC",
+   "outputs": {
+    "spaceweather.json": {
+     "bytes": 2455,
+     "sha256": "b715e4f88c930bb055ba33ba7955165daaee37b10187b80c6d2d85cfc4a6ee16"
     }
    }
   },
