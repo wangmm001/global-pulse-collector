@@ -1,5 +1,5 @@
 {
- "collected": "2026-08-21T23:35:25+00:00",
+ "collected": "2026-08-22T23:32:20+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -34,7 +34,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 31611,
-     "sha256": "a9cba73baade59c09845e0c27014820d33f79db2d679a1fe0da94e85f3dc7971"
+     "sha256": "d51c3d5a8612b80dac95486152d4affecc58bd44ff22e91e1ab930f356244444"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 76803,
-     "sha256": "b04e81dccf5ab89f6cff9fefb405cc041e9fa7b0551d125f4a7007fbecac6210"
+     "bytes": 73145,
+     "sha256": "1ea249b1fc6225c8a3adc21373df9093974dddf5bb75e3a1858c1e5f7f30b393"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 179985,
-     "sha256": "9d61536de7684e84776334999a629470d80ef8239e3967c009ca48ef89cae92f"
+     "bytes": 180590,
+     "sha256": "c0ceaf94fa2262c0944f4ecadbff65f8cfbf7d92923f2a353093a82cf0db16ba"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 89942,
-     "sha256": "ef155cefb6844efa126e60e022044467a98e96bfc62e0cb99b1d7d51aedef547"
+     "bytes": 18768,
+     "sha256": "7880853842ef691bc404ada2f40ea8f732072db2a825723b4ba3e5b86d9ee047"
     }
    }
   },
@@ -85,8 +85,8 @@
      "sha256": "050db553c40a77b678ed789879a6b93abf2c12652d708d825ebd6ae58a673e34"
     },
     "storms_daily.json": {
-     "bytes": 178235,
-     "sha256": "e0628cd1ba828d672f38e1df3e69e87f4f360a6ad04ea57d411f33b0c71d02e5"
+     "bytes": 177869,
+     "sha256": "a5b958539c8d513451b326f14d3dea5ee8ebd2fde42a9e894455f1d6930aa301"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 3295,
-     "sha256": "5ce46bdef60d4104853fcb92eff8ff8f8d910f1104a036beea5ff07e8fb9d8ce"
+     "bytes": 3066,
+     "sha256": "af99b6931e03228311bfc4e4fe05ff4f90763a7be8e830d2b1b65f0aa7dd83ed"
     }
    }
   },
