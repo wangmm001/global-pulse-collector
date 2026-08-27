@@ -1,5 +1,5 @@
 {
- "collected": "2026-08-25T23:34:48+00:00",
+ "collected": "2026-08-27T04:29:33+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -33,8 +33,8 @@
    "title": "制裁行动 2025– · OFAC",
    "outputs": {
     "sanction_events.json": {
-     "bytes": 31769,
-     "sha256": "6e1eb58e5b68b4411823939d61ecf17f4088bc638d378331fba1521f53a0b771"
+     "bytes": 31869,
+     "sha256": "b7f352d5ef3dc05b0a008a94a72bd8984ea6b4a19b827a528e7714e75379acbb"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 82295,
-     "sha256": "c60cabf345b9e8dd05a06defec76fe355e183e5292352d1ec5e7d0b0c9eaedb9"
+     "bytes": 79180,
+     "sha256": "5c0c655c6ed42778704214ea579b56adba0baf8e4f5452df7e465cd61ddd0740"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 180450,
-     "sha256": "723348b2624a3c7089580eeeb2c5389d9119abde91356da4c021b35a1ed46be1"
+     "bytes": 185100,
+     "sha256": "80e1ce317ea4cbbe74b80c5d40b059e871092b7bfeb4b75a73057f1e1e0004ad"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 11897,
-     "sha256": "bca52a12b10839d5648387b195f102a01e355f48c87f8a351a295cd5d183d414"
+     "bytes": 53285,
+     "sha256": "17a3905ca2f06c50867280ca02d84b5b24ae0772eaf1a43fd175416e35763ce3"
     }
    }
   },
@@ -85,8 +85,8 @@
      "sha256": "2fb63f900b805856626dea5f7ea83b3dd68bb430900e3b23942c7668f3c1b382"
     },
     "storms_daily.json": {
-     "bytes": 181361,
-     "sha256": "b25ff7f96dc78d6ad409b23774ed3b1edef62bcd0ec559db1bdd27811f4ed351"
+     "bytes": 180385,
+     "sha256": "b4e3b00e32539b739afdc9104f516fda1cce4bde5103ec6c33af7e9dd1dda845"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2958,
-     "sha256": "977981899b1927b330772dd2d17211ed2530747474ab784edcbc5990507e170e"
+     "bytes": 2610,
+     "sha256": "01b970a324c4bf7d453486d94cdea559cc57aceb575808a2208f12be825058b7"
     }
    }
   },
