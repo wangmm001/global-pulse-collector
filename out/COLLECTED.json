@@ -1,5 +1,5 @@
 {
- "collected": "2026-09-04T00:57:07+00:00",
+ "collected": "2026-09-05T00:54:05+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -33,8 +33,8 @@
    "title": "制裁行动 2025– · OFAC",
    "outputs": {
     "sanction_events.json": {
-     "bytes": 31962,
-     "sha256": "b1fd302a28a54bd08d38f3f896648f84c49780c7050a5c46b014e571f5bb3a85"
+     "bytes": 31995,
+     "sha256": "3390ad57469accc13d5cdba7faded4c7eea03cdbdfa9f428a550b19e6c1d38f9"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 75319,
-     "sha256": "6187e21de5c6346d26b6aaac8d7908fe9b30f0f9a9ba891adc4fc7a2781fd817"
+     "bytes": 76128,
+     "sha256": "3891650ba2f543809ab6ee381df4104b35200619cface04c84a7ca544825520d"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 183406,
-     "sha256": "f668dff28c9ee98ae169023271737e0ae622f2104e4c1447e26150f9d5d9310f"
+     "bytes": 179942,
+     "sha256": "23e610015eeee07b921054eae2be198ca609921739f4cbf048e1e726d5273744"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 89501,
-     "sha256": "9d99c39d7f282886c9fde5102f32230466420a3463ef9e4776d64186e57747b0"
+     "bytes": 91963,
+     "sha256": "742db7a404a5a86a4a7ece46aff59d3b46b9c1bfa372694d69eefbd14fe8ee29"
     }
    }
   },
@@ -85,8 +85,8 @@
      "sha256": "bbe731384a62d13ff7fa24629df5c29addf85809e6916a2394ecc98a1a045e01"
     },
     "storms_daily.json": {
-     "bytes": 188913,
-     "sha256": "550327469cc986ea5fe5e9faddee269d2a7fabd2927e745ba467c28b997cc373"
+     "bytes": 188354,
+     "sha256": "b29b4881ee52d03a569f2a856c71c9fde4d345827df810fa329e26665ee0aecd"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2266,
-     "sha256": "cef2494dd7029a8f11c61bb0b8264e45c31ed0bfbf7e9f10888cbbf23a55602e"
+     "bytes": 2410,
+     "sha256": "0682b66c23545b6f8dd1082ba585112867b35414fd094a846926ba0d0d8bdd8b"
     }
    }
   },
