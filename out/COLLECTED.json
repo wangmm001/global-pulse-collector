@@ -1,5 +1,5 @@
 {
- "collected": "2026-09-05T00:54:05+00:00",
+ "collected": "2026-09-06T00:52:19+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -34,7 +34,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 31995,
-     "sha256": "3390ad57469accc13d5cdba7faded4c7eea03cdbdfa9f428a550b19e6c1d38f9"
+     "sha256": "0ecea0561b1a92d105eed6c91ad432ab2da5da32348dd0a69e1089f4b71e72bb"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 76128,
-     "sha256": "3891650ba2f543809ab6ee381df4104b35200619cface04c84a7ca544825520d"
+     "bytes": 72450,
+     "sha256": "21b499e02fe4359ae31a84124a32bbcd2da6348fef1ece1e26701e8a99fc4a3b"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 179942,
-     "sha256": "23e610015eeee07b921054eae2be198ca609921739f4cbf048e1e726d5273744"
+     "bytes": 178993,
+     "sha256": "7a1a9f1c02fd6fafef095302026ad4a6d28caff532b30cca9f115f3f3b99c9f0"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 91963,
-     "sha256": "742db7a404a5a86a4a7ece46aff59d3b46b9c1bfa372694d69eefbd14fe8ee29"
+     "bytes": 32663,
+     "sha256": "2799e30f98b531197b1230d14f868ab59edfa200bc090652ee2fc843c37b45a0"
     }
    }
   },
@@ -85,8 +85,8 @@
      "sha256": "bbe731384a62d13ff7fa24629df5c29addf85809e6916a2394ecc98a1a045e01"
     },
     "storms_daily.json": {
-     "bytes": 188354,
-     "sha256": "b29b4881ee52d03a569f2a856c71c9fde4d345827df810fa329e26665ee0aecd"
+     "bytes": 187795,
+     "sha256": "4cab68d2d35faf037e2383e1ea19e6c380283a9c0faa3ff15b8cddccf128d7f4"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2410,
-     "sha256": "0682b66c23545b6f8dd1082ba585112867b35414fd094a846926ba0d0d8bdd8b"
+     "bytes": 2380,
+     "sha256": "ae820a64016f49c795122f9ee81f56247998580effd6fa7b5a7ca31fd92958c5"
     }
    }
   },
