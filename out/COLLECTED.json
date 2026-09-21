@@ -1,5 +1,5 @@
 {
- "collected": "2026-09-20T01:03:11+00:00",
+ "collected": "2026-09-21T01:02:15+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -34,7 +34,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 32410,
-     "sha256": "af3269ca44040070e7eaefd8d6d7f4e74ff686b159001927f2432af753f90e29"
+     "sha256": "a4b6dcfaac3433740ec8f5de7b59ee14d43be7620a9fe267ab8052089a3a31b9"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 64142,
-     "sha256": "c296ce370345add436a21e63a04ca28b9b387c139d7df0d5fea80293c000508b"
+     "bytes": 61332,
+     "sha256": "42954d27a071ee6a5aa60afa089c8ebc81d1c67e56a3b0ef7b43356f2384716d"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 76639,
-     "sha256": "68cb7db05b85c88235ece2cda9f64e02fd75df404ef51e690af8fa394a561f18"
+     "bytes": 30852,
+     "sha256": "163283b27b0d5b4aade9e1231c5c59d9ebe6837ee8353054d83fc45337703764"
     }
    }
   },
@@ -81,12 +81,12 @@
    "title": "台风轨迹 · NOAA IBTrACS",
    "outputs": {
     "storms.json": {
-     "bytes": 5286,
-     "sha256": "871b90657f0f5f92af8e22d427f3116f8c86879fe6493ad36f70228363830d51"
+     "bytes": 5718,
+     "sha256": "cd06180bf3e595d0a7d7d7fe9d2c187e3525c05d456f9ffa97f72dd62f6d1a6d"
     },
     "storms_daily.json": {
-     "bytes": 186764,
-     "sha256": "4e0ab7989b2d002b86e011a040ab249fb191900f7d9e27d6d39918d5d768f17c"
+     "bytes": 186216,
+     "sha256": "ddfc71bd9c54caae133c95271459912320befd7939ed0402ac1dc15b2fa556f3"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 1793,
-     "sha256": "a5b2f9891bd25e7d094ae2b17a111d3517cea29631e505644f227dd0189ba8ab"
+     "bytes": 1877,
+     "sha256": "7abff58c87208b45091bd39e095e059321ed4b691509e979e5d3503fbc5f9ad3"
     }
    }
   },
