@@ -1,5 +1,5 @@
 {
- "collected": "2026-09-24T01:20:00+00:00",
+ "collected": "2026-09-25T01:26:29+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -34,7 +34,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 32438,
-     "sha256": "ca891272546e8f64de52e7e62d861520e1ebb5da9bb75cc1ebd7c54c597a8459"
+     "sha256": "2076829d04c0d3d5ea578efc4a574ee93b2230cb8f7a79bdd436a5814f356e4a"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 70854,
-     "sha256": "9b7b5b5cd5f62f6838d58a9085600caf8e8b35bcd549c0ed4a47fc09e0c3e042"
+     "bytes": 73092,
+     "sha256": "2ba12a4934eba5e6b6bb810feb8fc745fd891d48073ecfda0c39e0dec75cbd5d"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 182002,
-     "sha256": "07e441187f39e8a35999d7cc908d69e7dfba4f3ca87072b6bdf6cf891f14c1a5"
+     "bytes": 180232,
+     "sha256": "f8e9513ec30edbfc8086131cd4e57627289834ba2b1d0545d65c1dc366156714"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 66449,
-     "sha256": "87467c686cf2bf4eb0567edd4f8ed521ccad97799a723d89ddc34fea716f876f"
+     "bytes": 109240,
+     "sha256": "9b3a613e7a6a944c48a8006f8d4e51209929d26b8ced52172365e46508deb676"
     }
    }
   },
@@ -81,12 +81,12 @@
    "title": "台风轨迹 · NOAA IBTrACS",
    "outputs": {
     "storms.json": {
-     "bytes": 3232,
-     "sha256": "9c187103349f62140002ddd5e6f4e87bb843efbefae40d3880f4fafc436c9f26"
+     "bytes": 3317,
+     "sha256": "403c72e7520d3dd675910f463ce9d79da65ffb53ea7d6f62f9eec45a141ab7ad"
     },
     "storms_daily.json": {
-     "bytes": 187471,
-     "sha256": "300c52461c8a594f19ce0a64c2fd64bd85b18407bc6557faed42ba33283d48c6"
+     "bytes": 190991,
+     "sha256": "d6da5f981825de8590ee65260c90fc35e4b5bf5708deff89ed4f5376ea590578"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2063,
-     "sha256": "bc3517960d3260d5f4849645cf06b2a5f3eb5223cf8101f4b18585eea162fce6"
+     "bytes": 1890,
+     "sha256": "fe597194ee76e45ddadb0c69228bb52410be4fab823970a358533a684db06f96"
     }
    }
   },
