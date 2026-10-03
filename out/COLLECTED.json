@@ -1,5 +1,5 @@
 {
- "collected": "2026-10-02T02:10:49+00:00",
+ "collected": "2026-10-03T01:54:09+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -33,8 +33,8 @@
    "title": "制裁行动 2025– · OFAC",
    "outputs": {
     "sanction_events.json": {
-     "bytes": 32704,
-     "sha256": "2fe29390ecea9ebf9228361f5ed0aafbb800b8d5f23db9180189ec4e9088831b"
+     "bytes": 32753,
+     "sha256": "63dfe6aa94d832b311aea06a67c66f18d6a51e47570d09919d23950070732c89"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 63178,
-     "sha256": "dbf954ceb08939f7b312990c7a0109fc23390cd99205a6f69d0d304934993722"
+     "bytes": 64714,
+     "sha256": "3942088ef2713eec8f1473943a7782185cac8e6ef823f45547cba16691eb1138"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 181283,
-     "sha256": "352323b41c29c5977ac6a7da0b3976d0baf33ce5de7154d5545757ab98675948"
+     "bytes": 181364,
+     "sha256": "66dc9895d6ee17497bf3b0369f05775f3e7c11a707d15de6c74f4cbf870c54bb"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 37404,
-     "sha256": "d622006c9aaf8f4e8d4822c96cb0391477e67b09fb4c24501bc972f679002ab3"
+     "bytes": 42350,
+     "sha256": "3189fa3f2aaa81f87e8e9848a8eb7ba42acd3642e0796b2adaf8d3d0c315669b"
     }
    }
   },
@@ -85,8 +85,8 @@
      "sha256": "1e2d9cf3e34023a44d683f8297bc84176de61f261910366d8eff81878ac9c534"
     },
     "storms_daily.json": {
-     "bytes": 195367,
-     "sha256": "f1d701a5974645d31b69850292d31ad4a8721243693242882e4dce3841b4f315"
+     "bytes": 205273,
+     "sha256": "2433846c46468cf872fb5694833609616ee739638b559e60069be76d9c9df663"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2143,
-     "sha256": "2ef913bd59c8d1e14bb5a3ebac5e464c8aed900f8809e37710277e686099b69e"
+     "bytes": 2071,
+     "sha256": "6cbba96eddc8f1c9c1d048ee69ffca57fedd172b7f28180ad69149d4939d2281"
     }
    }
   },
