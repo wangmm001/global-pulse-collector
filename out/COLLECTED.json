@@ -1,5 +1,5 @@
 {
- "collected": "2026-10-10T02:16:51+00:00",
+ "collected": "2026-10-11T01:49:29+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -34,7 +34,7 @@
    "outputs": {
     "sanction_events.json": {
      "bytes": 33154,
-     "sha256": "acffb5cf52028ba3eaa87c6f3df9381e5313b30d2410bf3b5716034dbec6effd"
+     "sha256": "9fbca52b456e586f9f2e7647e7ace7c0ef8c95c0baee141833b72e79b08f0a2c"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 64940,
-     "sha256": "3d5549c8f0fcd61711ab0675325535e25bf4877f7155e6b09c1dea6ef83cffbc"
+     "bytes": 63119,
+     "sha256": "9740643ee171866e4a38f00de7842c68f828178fe1a3409ede736474d7af7a2b"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 182569,
-     "sha256": "5a48606617ae2dddc0e9c6abad8f685741c02bea8ec1e63f90010bc3071f2ca9"
+     "bytes": 182363,
+     "sha256": "fa76b6b0fec814cac284fe5f3e2a2bbc711de12eac1789295ac8927569110ecf"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 70113,
-     "sha256": "1340ed21917ad04dd558b1d9a314e80950e192dfdb848a639f990fde091a0330"
+     "bytes": 102082,
+     "sha256": "719cd1c6f69a13af494d2c4800abcc6d34ebacb116183b13fd6444448edb8eae"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2455,
-     "sha256": "7260198e22bf8634b6a1efdd07937b6bdfe06429f637e9f27c27ff170e96372e"
+     "bytes": 2605,
+     "sha256": "c1e28c22357907a2549f0db878d7efa5d01d0ba635e8ac48f3c6178dd63fc9c1"
     }
    }
   },
