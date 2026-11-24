@@ -1,5 +1,5 @@
 {
- "collected": "2026-11-23T03:40:59+00:00",
+ "collected": "2026-11-24T06:55:58+00:00",
  "source": "global-pulse open-license collector (visit-g2 pattern)",
  "datasets": {
   "wb_series": {
@@ -33,8 +33,8 @@
    "title": "制裁行动 2025– · OFAC",
    "outputs": {
     "sanction_events.json": {
-     "bytes": 34144,
-     "sha256": "72331eae982d89dbb9fbb25585dae3fa76e339481a6d691c5b1ef06188a4b860"
+     "bytes": 34178,
+     "sha256": "0f9b4b2f36908ccff3a24adfc2ee471830d1be8cec8853ce2c670759cf81ea67"
     }
    }
   },
@@ -45,8 +45,8 @@
    "title": "地震 · USGS",
    "outputs": {
     "quakes.json": {
-     "bytes": 58468,
-     "sha256": "670ad36d3fad744db6501dc26fdab920d7f05729bf6ba91d3a48b42e8a4f5bcb"
+     "bytes": 62432,
+     "sha256": "4384faad8f4aa7d12529bab2b82faf1f757955173cb0152efff851c5c09f1736"
     }
    }
   },
@@ -57,8 +57,8 @@
    "title": "火点 24h · NASA FIRMS",
    "outputs": {
     "fires.json": {
-     "bytes": 172629,
-     "sha256": "f13fcfe67534b93659f8a799546764bae9e78cc781577bc6c9cc4da0f2d39daa"
+     "bytes": 175530,
+     "sha256": "a7784c1ac36821bf9dc975b5b1176a50af89b236c842538442d96a979f99ff79"
     }
    }
   },
@@ -69,8 +69,8 @@
    "title": "极光 · NOAA SWPC",
    "outputs": {
     "aurora.json": {
-     "bytes": 24192,
-     "sha256": "232f3379d4c00ec0eb9e5f97c82db05245b987fafacc0b3f79c556ed02068c32"
+     "bytes": 38068,
+     "sha256": "072a93794f08e8315710f8d85795816ec33cc916466a672d7d8674f95086e109"
     }
    }
   },
@@ -97,8 +97,8 @@
    "title": "空间天气 · NOAA SWPC",
    "outputs": {
     "spaceweather.json": {
-     "bytes": 2828,
-     "sha256": "ac641f0eab0b1557b3376292b14f41932864b6c69d0c515bdecdef451aa4b0ca"
+     "bytes": 2628,
+     "sha256": "a597b99e4612b8fee6dc170a87c938bddcfee82654af7672a3473c8c92d1e18f"
     }
    }
   },
